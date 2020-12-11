@@ -27,6 +27,7 @@ func repeatMe(words ...string) {
 
 // naked return function
 func lengAndUnderOfString(name string) (length int, lowerWord string) {
+	defer fmt.Println("I'm Done")
 	length = len(name)
 	lowerWord = strings.ToLower(name)
 	return
