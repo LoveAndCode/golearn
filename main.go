@@ -2,12 +2,17 @@ package main
 
 import "fmt"
 
-func main() {
-	// 명시적이 변수 선언
-	var name string = "johnmark"
-	fmt.Println(name)
+// declare parameter and return data type
+func multiply(a int, b int) int {
+	return a * b
+}
 
-	// 축약형 변수 선언, 타입추론을 통해 변수 자료형 선택
-	message := "hi!"
-	fmt.Println(message)
+// if, parameter has same data type, u can set paramere data type as follow
+func multiply2(a, b int) int {
+	return a * b
+}
+
+func main() {
+	fmt.Println(multiply(2, 2))
+	fmt.Println(multiply2(4, 3))
 }
