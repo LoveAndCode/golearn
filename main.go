@@ -24,4 +24,8 @@ func main() {
 	fmt.Println(multiply2(3, 4))
 	name := "JohnMark"
 	fmt.Println(lenAndUpperOfString(name))
+
+	nameLen, upperName := lenAndUpperOfString(name)
+
+	fmt.Printf("My Name is %s , Name Length is %d\n", upperName, nameLen)
 }
