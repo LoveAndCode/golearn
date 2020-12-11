@@ -15,8 +15,14 @@ func multiply2(a, b int) int {
 	return a * b
 }
 
+// return multiple value
 func lenAndUpperOfString(name string) (int, string) {
 	return len(name), strings.ToUpper(name)
+}
+
+// get all parameters
+func repeatMe(words ...string) {
+	fmt.Println(words)
 }
 
 func main() {
@@ -28,4 +34,6 @@ func main() {
 	nameLen, upperName := lenAndUpperOfString(name)
 
 	fmt.Printf("My Name is %s , Name Length is %d\n", upperName, nameLen)
+
+	repeatMe("a", "b", "c", "d", "Zip")
 }
