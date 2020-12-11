@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"strings"
+
+	"github.com/LoveAndCode/golearn/echo"
 )
 
 // declare parameter and return data type
@@ -48,4 +50,8 @@ func main() {
 	// naked return
 	totalLen, underWord := lengAndUnderOfString("JOHNMARK")
 	fmt.Printf("%d %s\n", totalLen, underWord)
+
+	// call other package function
+	message := echo.EchoMessageToUpper("hello world")
+	fmt.Println(message)
 }
