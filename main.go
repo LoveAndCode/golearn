@@ -25,6 +25,13 @@ func repeatMe(words ...string) {
 	fmt.Println(words)
 }
 
+// naked return function
+func lengAndUnderOfString(name string) (length int, lowerWord string) {
+	length = len(name)
+	lowerWord = strings.ToLower(name)
+	return
+}
+
 func main() {
 	fmt.Println(multiply(2, 2))
 	fmt.Println(multiply2(3, 4))
@@ -36,4 +43,8 @@ func main() {
 	fmt.Printf("My Name is %s , Name Length is %d\n", upperName, nameLen)
 
 	repeatMe("a", "b", "c", "d", "Zip")
+
+	// naked return
+	totalLen, underWord := lengAndUnderOfString("JOHNMARK")
+	fmt.Printf("%d %s\n", totalLen, underWord)
 }
